@@ -258,27 +258,27 @@ namespace AchopocalypseCli
                 doc.RenameWorksheet(SLDocument.DefaultFirstSheetName, "RestartSyndromeAchoVideos");
 
                 // Write headers
-                doc.SetCellValue(1, 0, "id");
-                doc.SetCellValue(1, 1, "score_id");
-                doc.SetCellValue(1, 2, "vid");
-                doc.SetCellValue(1, 3, "youtube_video_id");
-                doc.SetCellValue(1, 4, "youtube_video_title");
-                doc.SetCellValue(1, 5, "youtube_channel_id");
-                doc.SetCellValue(1, 6, "youtube_channel_title");
-                doc.SetCellValue(1, 7, "youtube_video_description");
-                doc.SetCellValue(1, 8, "user");
-                doc.SetCellValue(1, 9, "mode");
-                doc.SetCellValue(1, 10, "ship");
-                doc.SetCellValue(1, 11, "score");
-                doc.SetCellValue(1, 12, "com");
-                doc.SetCellValue(1, 13, "platform");
-                doc.SetCellValue(1, 14, "entered");
-                doc.SetCellValue(1, 15, "extra");
-                doc.SetCellValue(1, 16, "stage");
-                doc.SetCellValue(1, 17, "clear");
-                doc.SetCellValue(1, 18, "private");
-                doc.SetCellValue(1, 19, "obsolete");
-                doc.SetCellValue(1, 20, "archive");
+                doc.SetCellValue(1, 1, "id");
+                doc.SetCellValue(1, 2, "score_id");
+                doc.SetCellValue(1, 3, "vid");
+                doc.SetCellValue(1, 4, "youtube_video_id");
+                doc.SetCellValue(1, 5, "youtube_video_title");
+                doc.SetCellValue(1, 6, "youtube_channel_id");
+                doc.SetCellValue(1, 7, "youtube_channel_title");
+                doc.SetCellValue(1, 8, "youtube_video_description");
+                doc.SetCellValue(1, 9, "user");
+                doc.SetCellValue(1, 10, "mode");
+                doc.SetCellValue(1, 11, "ship");
+                doc.SetCellValue(1, 12, "score");
+                doc.SetCellValue(1, 13, "com");
+                doc.SetCellValue(1, 14, "platform");
+                doc.SetCellValue(1, 15, "entered");
+                doc.SetCellValue(1, 16, "extra");
+                doc.SetCellValue(1, 17, "stage");
+                doc.SetCellValue(1, 18, "clear");
+                doc.SetCellValue(1, 19, "private");
+                doc.SetCellValue(1, 20, "obsolete");
+                doc.SetCellValue(1, 21, "archive");
 
                 // Write rows
                 int currentRow = 2;
@@ -291,27 +291,27 @@ namespace AchopocalypseCli
                         item = youtubeData[id];
                     }
 
-                    doc.SetCellValue(currentRow, 0, score.Id);
-                    doc.SetCellValue(currentRow, 1, score.ScoreId);
-                    doc.SetCellValue(currentRow, 2, score.Video);
-                    doc.SetCellValue(currentRow, 3, item.id);
-                    doc.SetCellValue(currentRow, 4, item.snippet.title);
-                    doc.SetCellValue(currentRow, 5, item.snippet.channelId);
-                    doc.SetCellValue(currentRow, 6, item.snippet.channelTitle);
-                    doc.SetCellValue(currentRow, 7, item.snippet.description);
-                    doc.SetCellValue(currentRow, 8, score.User);
-                    doc.SetCellValue(currentRow, 9, score.Mode);
-                    doc.SetCellValue(currentRow, 10, score.Ship);
-                    doc.SetCellValue(currentRow, 11, score.Score);
-                    doc.SetCellValue(currentRow, 12, score.Comment);
-                    doc.SetCellValue(currentRow, 13, score.Platform);
-                    doc.SetCellValue(currentRow, 14, score.Entered);
-                    doc.SetCellValue(currentRow, 15, score.Extra);
-                    doc.SetCellValue(currentRow, 16, score.Stage);
-                    doc.SetCellValue(currentRow, 17, score.Clear);
-                    doc.SetCellValue(currentRow, 18, score.Private);
-                    doc.SetCellValue(currentRow, 19, score.Obsolete);
-                    doc.SetCellValue(currentRow, 20, score.Archive);
+                    doc.SetCellValue(currentRow, 1, score.Id);
+                    doc.SetCellValue(currentRow, 2, score.ScoreId);
+                    doc.SetCellValue(currentRow, 3, score.Video);
+                    doc.SetCellValue(currentRow, 4, item.id);
+                    doc.SetCellValue(currentRow, 5, item.snippet.title);
+                    doc.SetCellValue(currentRow, 6, item.snippet.channelId);
+                    doc.SetCellValue(currentRow, 7, item.snippet.channelTitle);
+                    doc.SetCellValue(currentRow, 8, item.snippet.description);
+                    doc.SetCellValue(currentRow, 9, score.User);
+                    doc.SetCellValue(currentRow, 10, score.Mode);
+                    doc.SetCellValue(currentRow, 11, score.Ship);
+                    doc.SetCellValue(currentRow, 12, score.Score);
+                    doc.SetCellValue(currentRow, 13, score.Comment);
+                    doc.SetCellValue(currentRow, 14, score.Platform);
+                    doc.SetCellValue(currentRow, 15, score.Entered);
+                    doc.SetCellValue(currentRow, 16, score.Extra);
+                    doc.SetCellValue(currentRow, 17, score.Stage);
+                    doc.SetCellValue(currentRow, 18, score.Clear);
+                    doc.SetCellValue(currentRow, 19, score.Private);
+                    doc.SetCellValue(currentRow, 20, score.Obsolete);
+                    doc.SetCellValue(currentRow, 21, score.Archive);
 
                     currentRow++;
                 }
