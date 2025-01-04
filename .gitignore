@@ -1,0 +1,15 @@
+*.suo
+*.user
+*~
+*.swp
+*.swo
+*ncrunch*
+_ReSharper.*
+bin
+obj
+packages
+.vs/
+.idea/
+Deployment
+
+config.json
